@@ -1,0 +1,68 @@
+/* tell the SVG path to be a thin blue line without any area fill */
+path {
+	stroke: steelblue;
+	stroke-width: 1;
+	fill: none;
+}
+
+.sparkline {
+	background-color: #eee;
+	fill: #eee;
+}
+
+.axis {
+	shape-rendering: crispEdges;
+}
+
+.x.axis line {
+	stroke: lightgrey;
+}
+
+.x.axis .minor {
+	stroke-opacity: .5;
+}
+
+.x.axis path {
+	display: none;
+}
+
+.y.axis line,.y.axis path {
+	fill: none;
+	stroke: #000;
+}
+
+.bar {
+	fill: steelblue;
+}
+
+.marker-full {
+	stroke: #ed7d31;
+	fill: #ed7d31;
+}
+
+.marker-partial {
+	stroke: #ed7d31;
+	fill: white;
+}
+
+.subheading {
+	font-size: 12pt;
+	fill: #bbb;
+}
+
+.subheadingline {
+	stroke: #bbb;
+}
+
+.bullet-background {
+	fill: #eee;
+}
+
+.circleplot-background {
+	fill: #eee;
+}
+
+.circleplot-marker {
+	stroke: #777;
+	fill: none;
+}
