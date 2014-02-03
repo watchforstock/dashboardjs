@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+</style>
+
+<script src="d3.v3.min.js" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="../dashboardjs/dashboard.css">
+</head>
+
+<body>
+
+
+<div id="graph"></div>
+<div id="graph2"></div>
+
+<script src="analyticsseries.js"></script>
+<script src="dataseries.js"></script>
+<script src="data.js"></script>
+<script src="datadata.js"></script>
+<script src="../dashboardjs/dashboard.js"></script>
+<script>
+	dashboard('#graph', 1500, 300, datadata, dataseries);
+	dashboard('#graph2', 1500, 700, data, analyticsseries);
+
+</script>
+
+</body>
+
+</html>
